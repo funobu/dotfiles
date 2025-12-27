@@ -1,7 +1,10 @@
 [tools]
 bun = "latest"
+dart = "latest"
 gh = "latest"
 go = "1.25.5"
 golangci-lint = "latest"
+lazygit = "latest"
 node = "25.2.1"
 ruby = "latest"
+rust = "latest"
