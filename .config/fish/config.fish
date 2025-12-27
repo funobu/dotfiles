@@ -9,3 +9,4 @@ set -gx XDG_CACHE_HOME $HOME/.cache
 if test -d /opt/homebrew
     eval (/opt/homebrew/bin/brew shellenv)
 end
+mise activate fish | source
