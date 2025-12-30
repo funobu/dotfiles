@@ -11,6 +11,7 @@ if [ -d ~/.config/fish ]; then
   mv ~/.config/fish ~/.config/fish.backup
 fi
 
+# TODO: aaaa
 # ~/.configがなければ作成
 mkdir -p ~/.config
 

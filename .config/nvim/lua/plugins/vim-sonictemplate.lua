@@ -3,6 +3,7 @@
 return {
   "mattn/vim-sonictemplate",
   dependencies = { "nvim-lua/plenary.nvim" },
+  cmd = { "Template" },
   keys = {
     { "tmp", "Template", mode = "ca" },
   },
@@ -12,9 +13,9 @@ return {
     vim.g.sonictemplate_postfix_key = 0
   end,
   config = function()
+    -- template の保存場所を変更
     local Path = require("plenary.path")
-    vim.g.sonictemplate_vim_template_dir = {
-      Path:new(vim.fn.stdpath("config"), "template"):absolute(),
-    }
+    local template_path = Path:new(vim.fn.stdpath("config"), "templates")
+    vim.g.sonictemplate_template_dir = template_path:absolute()
   end,
 }
