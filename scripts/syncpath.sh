@@ -40,7 +40,7 @@ ln -s ~/dotfiles/.config/mise/config.toml ~/.config/mise/config.toml
 ###############################
 # 既存の.config/miseがあればバックアップ
 if [ -d ~/.config/nvim ]; then
-  mv ~/.config/nvim ~/.config/nvim.backup
+  mv ~/.config/mise ~/.config/mise.backup
 fi
 
 ln -s ~/dotfiles/.config/nvim ~/.config/nvim
